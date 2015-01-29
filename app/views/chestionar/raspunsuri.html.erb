@@ -24,7 +24,7 @@
 	<% if @intrebare2 == "Răspuns corect." %> 
 		<p style="color:green"><%= @intrebare2 %> </p>
 		<% else %> 
-		<p style="color:red"><%= @intrebare2 %> Variantă corectă: b) Variante bifate: <%= @a if @intrebare1_var1%> <%= @b if @intrebare1_var2 %> <%= @c if @intrebare1_var3 %></p>
+		<p style="color:red"><%= @intrebare2 %> Variantă corectă: b) Variante bifate: <%= @a if @intrebare2_var1%> <%= @b if @intrebare2_var2 %> <%= @c if @intrebare2_var3 %></p>
 	<% end %>
 
 <%= submit_tag("Refă chestionarul") %>
