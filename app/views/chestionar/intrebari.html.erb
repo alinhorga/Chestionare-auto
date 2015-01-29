@@ -1,0 +1,24 @@
+<h1>Chestionar#intrebari</h1>
+<p>Find me in app/views/chestionar/intrebari.html.erb</p>
+<br />
+<h3>Chestionar 1</h3>
+<%= form_tag("/raspunsuri", method: "get") do %>
+
+	<h4>Ce măsuri trebuie să luați atunci când circulați în condiții atmosferice ce împiedică mult vizibilitatea?</h4>
+	<p>a)	<%= check_box_tag :a1 %>
+				<%= label_tag :a1, "Să circulați pe distanțe scurte și cu luminile de poziție în funcțiune;" %></p>
+	<p>b)	<%= check_box_tag :b1 %>
+				<%= label_tag :b1, "Să folosiți luminile de poziție și să circulați cât mai aproape de marginea din dreapta a drumului;" %></p>
+	<p>c)	<%= check_box_tag :c1 %>
+				<%= label_tag :c1, "Să folosiți luminile de întâlnire." %></p>
+
+	<h4>Căror vehicule le este interzisă circulația pe autostrăzi?</h4>
+	<p>a) <%= check_box_tag :a2 %>
+				<%= label_tag :a2, "Motocicletelor și automobilelor care nu pot circula cu mai mult de 60 km/h;" %></p>
+	<p>b) <%= check_box_tag :b2 %>
+				<%= label_tag :b2, "Celor care, prin construcție sau din alte cauze, nu pot depăsi viteza de 50 km/h;" %></p>
+	<p>c) <%= check_box_tag :c2 %>
+				<%= label_tag :c2, "Autovehiculelor care transportă încărcături periculoase;" %></p>
+
+<%= submit_tag("Verifică răspunsurile") %>
+<% end %>
